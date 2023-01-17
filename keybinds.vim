@@ -2,8 +2,8 @@
 :set mouse=a
 
 " Set tab to 4 spaces "
-:set tabstop=4
-:set shiftwidth=4
+:set tabstop=2
+:set shiftwidth=2
 :set expandtab
 
 :set number
@@ -34,6 +34,9 @@ inoremap <c-x><c-s> <c-\><c-o>:w<cr>
 
 " Shortcut to use HopWord basic usage "
 :nnoremap <C-h> <Cmd>HopWord<CR>
+
+" Jump to implementation "
+:nnoremap <C-[> <Cmd>:pop<CR>
 
 " Toggle Filetree "
 :nnoremap <S-A-T> <Cmd>NvimTreeToggle<CR>

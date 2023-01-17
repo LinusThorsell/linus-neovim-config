@@ -32,6 +32,7 @@ lspconfig.volar.setup({})
 --lspconfig.vuels.setup({})
 lspconfig.html.setup({})
 lspconfig.clangd.setup({})
+lspconfig.tsserver.setup({})
 
 require('luasnip.loaders.from_vscode').lazy_load()
 
@@ -49,6 +50,7 @@ cmp.setup({
         end
     },
     sources = {
+        {name = 'nvim_lsp_signature_help'},
         {name = 'path'},
         -- {name = 'buffer', keyword_length = 3},
         {name = 'nvim_lsp', keyword_length = 3},
